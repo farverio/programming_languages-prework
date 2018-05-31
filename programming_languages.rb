@@ -5,7 +5,7 @@ def reformat_languages(languages)
     i_language_names.each do |i_language_name, i_type|
       if !new_hash[i_language_name]
         new_hash[i_language_name] = {
-          type: i_type.values,
+          type: i_type.values.to_s,
           style: [i_style.to_s]
         }
       else
