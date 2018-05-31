@@ -6,7 +6,7 @@ def reformat_languages(languages)
       if !new_hash[i_language_name]
         new_hash[i_language_name] = {
           type: i_type.values[0],
-          style: [i_style.to_s]
+          style: [i_style]
         }
       else
         new_hash[i_language_name][:style] << i_style.to_s
